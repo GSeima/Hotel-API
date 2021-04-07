@@ -1,0 +1,12 @@
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\bin\Debug\net5.0\Hotel.Dominio.deps.json
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\bin\Debug\net5.0\Hotel.Dominio.dll
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\bin\Debug\net5.0\ref\Hotel.Dominio.dll
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\bin\Debug\net5.0\Hotel.Dominio.pdb
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.csprojAssemblyReference.cache
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.AssemblyInfoInputs.cache
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.AssemblyInfo.cs
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.dll
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\ref\Hotel.Dominio.dll
+C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.pdb
