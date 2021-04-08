@@ -32,10 +32,31 @@ namespace Hotel.Repositorio.Services
                 {
                     ReservaId = r.ReservaId,
                     QuartoId = r.QuartoId,
+                    Capacidade = r.Quarto.TipoQuarto.Capacidade,
                     Cpf = r.Cpf,
                     CheckIn = r.CheckIn,
                     CheckOut = r.CheckOut
                     
+                }).ToListAsync();
+
+            return reservas;
+        }
+
+        public async Task<List<BuscarModel>> BuscarEmAndamento()
+        {
+            var reservas = await _context
+                .Reserva
+                .Where(r => r.CheckOut == null)
+                .Select(
+                r => new BuscarModel
+                {
+                    ReservaId = r.ReservaId,
+                    QuartoId = r.QuartoId,
+                    Capacidade = r.Quarto.TipoQuarto.Capacidade,
+                    Cpf = r.Cpf,
+                    CheckIn = r.CheckIn,
+                    CheckOut = r.CheckOut
+
                 }).ToListAsync();
 
             return reservas;
@@ -123,7 +144,7 @@ namespace Hotel.Repositorio.Services
                    .FirstOrDefault();
 
                 if (cliente == null)
-                    throw new Exception($"CPF: {a.Cpf} não cadastrado.");
+                    throw new Exception("CPF não cadastrado.");
             });
 
             reserva.Hospedes = hospedes;

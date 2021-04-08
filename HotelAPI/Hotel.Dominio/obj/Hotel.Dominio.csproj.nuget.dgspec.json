@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\Api Nova\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj": {}
+    "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\Api Nova\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj": {
+    "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\Api Nova\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj",
         "projectName": "Hotel.Dominio",
-        "projectPath": "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\Api Nova\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj",
-        "packagesPath": "C:\\Users\\Seima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\Api Nova\\HotelAPI\\Hotel.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj",
+        "packagesPath": "C:\\Users\\gabriel.seima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Dominio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Seima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabriel.seima\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

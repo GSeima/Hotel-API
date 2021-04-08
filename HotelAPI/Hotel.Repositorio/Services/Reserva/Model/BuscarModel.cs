@@ -9,6 +9,7 @@ namespace Hotel.Repositorio.Services.Reserva.Model
     {
         public int ReservaId { get; set; }
         public int QuartoId { get; set; }
+        public int Capacidade { get; set; }
         public string Cpf { get; set; }
         public List<HospedeCpf> Hospedes { get; set; }
         public DateTime? CheckIn { get; set; }

@@ -7,7 +7,7 @@ namespace Hotel.Dominio.Entities.Enums
     public enum Situacao
     {
         Disponivel = 1,
-        Ocupado = 2,
-        Reservado = 3
+        Reservado = 2,
+        Ocupado = 3,
     }
 }

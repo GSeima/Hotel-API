@@ -34,3 +34,21 @@ C:\Users\Seima\Desktop\TecherProject\Treinamento\treinamento\Avaliacoes\Api Nova
 C:\Users\Seima\Desktop\TecherProject\Treinamento\treinamento\Avaliacoes\Api Nova\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\ref\Hotel.Repositorio.dll
 C:\Users\Seima\Desktop\TecherProject\Treinamento\treinamento\Avaliacoes\Api Nova\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\Hotel.Repositorio.pdb
 C:\Users\Seima\Desktop\TecherProject\Treinamento\treinamento\Avaliacoes\Api Nova\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\Hotel.Repositorio.genruntimeconfig.cache
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\bin\Debug\net5.0\Hotel.Repositorio.deps.json
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\bin\Debug\net5.0\Hotel.Repositorio.runtimeconfig.json
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\bin\Debug\net5.0\Hotel.Repositorio.runtimeconfig.dev.json
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\bin\Debug\net5.0\Hotel.Repositorio.dll
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\bin\Debug\net5.0\ref\Hotel.Repositorio.dll
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\bin\Debug\net5.0\Hotel.Repositorio.pdb
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\bin\Debug\net5.0\Hotel.Dominio.dll
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\bin\Debug\net5.0\Hotel.Dominio.pdb
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\Hotel.Repositorio.csprojAssemblyReference.cache
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\Hotel.Repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\Hotel.Repositorio.AssemblyInfoInputs.cache
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\Hotel.Repositorio.AssemblyInfo.cs
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\Hotel.Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\Hotel.Repositorio.csproj.CopyComplete
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\Hotel.Repositorio.dll
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\ref\Hotel.Repositorio.dll
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\Hotel.Repositorio.pdb
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Repositorio\obj\Debug\net5.0\Hotel.Repositorio.genruntimeconfig.cache

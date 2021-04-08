@@ -26,6 +26,12 @@ namespace HotelAPI.Controllers
             return await _reserva.Buscar();
         }
 
+        [HttpGet("{andamento}")]
+        public async Task<List<BuscarModel>> BuscarEmAndamento()
+        {
+            return await _reserva.BuscarEmAndamento();
+        }
+
         [HttpGet("{reservaId}")]
         public async Task<ObterModel> Obter(int reservaId)
         {

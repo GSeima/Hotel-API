@@ -10,3 +10,15 @@ C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\ne
 C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.dll
 C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\ref\Hotel.Dominio.dll
 C:\Users\Seima\Desktop\TecherProject\ApiTest\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.pdb
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\bin\Debug\net5.0\Hotel.Dominio.deps.json
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\bin\Debug\net5.0\Hotel.Dominio.dll
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\bin\Debug\net5.0\ref\Hotel.Dominio.dll
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\bin\Debug\net5.0\Hotel.Dominio.pdb
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.csprojAssemblyReference.cache
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.AssemblyInfoInputs.cache
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.AssemblyInfo.cs
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.dll
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\ref\Hotel.Dominio.dll
+C:\Users\gabriel.seima\source\repos\treinamento\Hotel-API\HotelAPI\Hotel.Dominio\obj\Debug\net5.0\Hotel.Dominio.pdb
