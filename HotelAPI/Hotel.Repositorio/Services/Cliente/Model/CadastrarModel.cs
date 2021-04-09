@@ -21,9 +21,6 @@ namespace Hotel.Repositorio.Services.Cliente.Model
             if (string.IsNullOrWhiteSpace(NomeCompleto))
                 throw new Exception("Nome obrigatório.");
 
-            if (DataNascimento == null)
-                throw new Exception("Data de Nascimento obrigatório.");
-
             if (DateTime.Now.Year - DataNascimento.Year < 18)
                 throw new Exception("O cliente precisa ter mais de 18 anos para se cadastrar.");
 

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Repositorio\\Hotel.Repositorio.csproj": {}
+    "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\API\\Hotel-API\\HotelAPI\\Hotel.Repositorio\\Hotel.Repositorio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj": {
+    "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\API\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\API\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj",
         "projectName": "Hotel.Dominio",
-        "projectPath": "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj",
-        "packagesPath": "C:\\Users\\gabriel.seima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\API\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Seima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\API\\Hotel-API\\HotelAPI\\Hotel.Dominio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\gabriel.seima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Seima\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,21 +75,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Repositorio\\Hotel.Repositorio.csproj": {
+    "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\API\\Hotel-API\\HotelAPI\\Hotel.Repositorio\\Hotel.Repositorio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Repositorio\\Hotel.Repositorio.csproj",
+        "projectUniqueName": "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\API\\Hotel-API\\HotelAPI\\Hotel.Repositorio\\Hotel.Repositorio.csproj",
         "projectName": "Hotel.Repositorio",
-        "projectPath": "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Repositorio\\Hotel.Repositorio.csproj",
-        "packagesPath": "C:\\Users\\gabriel.seima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Repositorio\\obj\\",
+        "projectPath": "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\API\\Hotel-API\\HotelAPI\\Hotel.Repositorio\\Hotel.Repositorio.csproj",
+        "packagesPath": "C:\\Users\\Seima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\API\\Hotel-API\\HotelAPI\\Hotel.Repositorio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\gabriel.seima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Seima\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,8 +106,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gabriel.seima\\source\\repos\\treinamento\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj"
+              "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\API\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj": {
+                "projectPath": "C:\\Users\\Seima\\Desktop\\TecherProject\\Treinamento\\treinamento\\Avaliacoes\\API\\Hotel-API\\HotelAPI\\Hotel.Dominio\\Hotel.Dominio.csproj"
               }
             }
           }
@@ -152,7 +158,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

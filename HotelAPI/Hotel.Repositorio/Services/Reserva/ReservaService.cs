@@ -26,7 +26,6 @@ namespace Hotel.Repositorio.Services
         {
             var reservas = await _context
                 .Reserva
-                //.Where(r => r.CheckOut == null)
                 .Select(
                 r => new BuscarModel
                 {
@@ -37,26 +36,6 @@ namespace Hotel.Repositorio.Services
                     CheckIn = r.CheckIn,
                     CheckOut = r.CheckOut
                     
-                }).ToListAsync();
-
-            return reservas;
-        }
-
-        public async Task<List<BuscarModel>> BuscarEmAndamento()
-        {
-            var reservas = await _context
-                .Reserva
-                .Where(r => r.CheckOut == null)
-                .Select(
-                r => new BuscarModel
-                {
-                    ReservaId = r.ReservaId,
-                    QuartoId = r.QuartoId,
-                    Capacidade = r.Quarto.TipoQuarto.Capacidade,
-                    Cpf = r.Cpf,
-                    CheckIn = r.CheckIn,
-                    CheckOut = r.CheckOut
-
                 }).ToListAsync();
 
             return reservas;
