@@ -123,7 +123,7 @@ namespace Hotel.Repositorio.Services
                    .FirstOrDefault();
 
                 if (cliente == null)
-                    throw new Exception("CPF não cadastrado.");
+                    throw new Exception($"CPF {a.Cpf} não cadastrado.");
             });
 
             reserva.Hospedes = hospedes;
@@ -153,8 +153,18 @@ namespace Hotel.Repositorio.Services
             reserva.TaxasConsumo = model.TaxasConsumo;
             reserva.ValorDiarias = reserva.Quarto.TipoQuarto.Valor;
             reserva.CheckOut = DateTime.Now;
-            int tempoHospedagem = (reserva.CheckOut.Value - reserva.CheckIn.Value).Days;
-            reserva.ValorTotal = ((reserva.ValorDiarias * tempoHospedagem) + reserva.TaxasConsumo);
+
+            var tempoHospedagem = (reserva.CheckOut.Value - reserva.CheckIn.Value);
+
+            if (tempoHospedagem.TotalDays <= 1)
+            {
+                reserva.ValorTotal = reserva.ValorDiarias + reserva.TaxasConsumo;
+            }
+            else
+            {
+                reserva.ValorTotal = ((int)Math.Ceiling(tempoHospedagem.TotalDays) * reserva.ValorDiarias) + reserva.TaxasConsumo;
+            }
+
             reserva.Quarto.SituacaoId = Situacao.Disponivel;
 
             await _context.SaveChangesAsync();
