@@ -46,9 +46,13 @@ namespace Hotel.Dominio.Entities
         [ForeignKey(nameof(QuartoId))]
         public Quarto Quarto { get; set; }
 
+        public DateTime DataEntrada { get; set; }
+        public DateTime DataSaida { get; set; }
+
         public DateTime DataCriacaoReserva { get; set; }
         public DateTime? CheckIn { get; set; }
         public decimal? ValorDiarias { get; set; }
+        public decimal? Multa { get; set; }
         public decimal? TaxasConsumo { get; set; }
         public decimal? ValorTotal { get; set; }
         public DateTime? CheckOut { get; set; }

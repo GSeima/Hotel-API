@@ -13,6 +13,8 @@ namespace Hotel.Repositorio.Services.Reserva.Model
         public List<HospedeCpf> Hospedes { get; set; }
         public int QuartoId { get; set; }
         public DateTime DataCriacaoReserva { get; set; }
+        public DateTime DataEntrada { get; set; }
+        public DateTime DataSaida { get; set; }
         public DateTime? CheckIn { get; set; }
         public DateTime? CheckOut { get; set; }
         public decimal? ValorTotal { get; set; }

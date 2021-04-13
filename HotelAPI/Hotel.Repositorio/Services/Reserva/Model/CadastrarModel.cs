@@ -9,6 +9,8 @@ namespace Hotel.Repositorio.Services.Reserva.Model
     {
         public string Cpf { get; set; }
         public int QuartoId { get; set; }
+        public DateTime DataEntrada { get; set; }
+        public DateTime DataSaida { get; set; }
         public List<HospedeCpf> Hospedes { get; set; }
 
         public void ValidarCadastro()
@@ -20,9 +22,10 @@ namespace Hotel.Repositorio.Services.Reserva.Model
                 throw new Exception("CPF inválido.");
 
             if (QuartoId > 50 || QuartoId < 1)
-            {
                 throw new Exception("Número do quarto inválido.");
-            }
+
+            if (DataEntrada > DataSaida)
+                throw new Exception("Data de entrada não pode ser  maior que a Data de saida.");
         }
     }
 }

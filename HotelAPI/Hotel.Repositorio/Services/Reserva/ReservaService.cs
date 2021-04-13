@@ -55,6 +55,8 @@ namespace Hotel.Repositorio.Services
                     Hospedes = r.Hospedes,
                     QuartoId = r.QuartoId,
                     DataCriacaoReserva = r.DataCriacaoReserva,
+                    DataEntrada = r.DataEntrada,
+                    DataSaida = r.DataSaida,
                     CheckIn = r.CheckIn.Value,
                     CheckOut = r.CheckOut.Value,
                     ValorTotal = r.ValorTotal.Value
@@ -74,25 +76,29 @@ namespace Hotel.Repositorio.Services
             if (!verificaCpf)
                 throw new Exception("CPF não cadastrado.");
 
+            var verificaData = await _context
+                .Reserva
+                .Where(q => q.QuartoId == model.QuartoId)
+                .Where(r => r.CheckOut == null)
+                .AnyAsync(d => d.DataEntrada <= model.DataEntrada || d.DataSaida >= model.DataEntrada);
+
+            if (verificaData)
+                throw new Exception($"Quarto {model.QuartoId} estará reservado nesta data.");
+
             var quarto = await _context
                 .Quarto
                 .Where(q => q.QuartoId == model.QuartoId)
                 .FirstOrDefaultAsync();
 
-            if (quarto.SituacaoId == Situacao.Reservado || quarto.SituacaoId == Situacao.Ocupado)
-                throw new Exception("Quarto indisponível.");
-
-
-
             var reserva = new Dominio.Entities.Reserva
             {
                 Cpf = model.Cpf,
                 QuartoId = model.QuartoId,
+                DataEntrada = model.DataEntrada,
+                DataSaida = model.DataSaida,
                 Hospedes = new List<HospedeCpf>(),
                 DataCriacaoReserva = DateTime.Now
             };
-
-            quarto.SituacaoId = Situacao.Reservado;
 
             _context.Reserva.Add(reserva);
             await _context.SaveChangesAsync();
@@ -108,6 +114,9 @@ namespace Hotel.Repositorio.Services
 
             if (reserva == null)
                 throw new Exception("Reserva não cadastrada.");
+
+            if (reserva.DataEntrada > DateTime.Now)
+                throw new Exception("Check-In não pode ser feito antes da data de entrada.");
 
             if (reserva.CheckIn != null)
                 throw new Exception("Check-In já cadastrado.");
@@ -156,13 +165,22 @@ namespace Hotel.Repositorio.Services
 
             var tempoHospedagem = (reserva.CheckOut.Value - reserva.CheckIn.Value);
 
-            if (tempoHospedagem.TotalDays <= 1)
+            if (reserva.DataSaida < DateTime.Now.Date)
             {
-                reserva.ValorTotal = reserva.ValorDiarias + reserva.TaxasConsumo;
+                reserva.Multa = reserva.Quarto.TipoQuarto.Valor;
             }
             else
             {
-                reserva.ValorTotal = ((int)Math.Ceiling(tempoHospedagem.TotalDays) * reserva.ValorDiarias) + reserva.TaxasConsumo;
+                reserva.Multa = 0;
+            }
+
+            if (tempoHospedagem.TotalDays <= 1)
+            {
+                reserva.ValorTotal = reserva.ValorDiarias + reserva.TaxasConsumo + reserva.Multa;
+            }
+            else
+            {
+                reserva.ValorTotal = ((int)Math.Ceiling(tempoHospedagem.TotalDays) * reserva.ValorDiarias) + reserva.TaxasConsumo + reserva.Multa;
             }
 
             reserva.Quarto.SituacaoId = Situacao.Disponivel;
