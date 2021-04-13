@@ -80,9 +80,10 @@ namespace Hotel.Repositorio.Services
                 .Reserva
                 .Where(q => q.QuartoId == model.QuartoId)
                 .Where(r => r.CheckOut == null)
-                .AnyAsync(d => d.DataEntrada <= model.DataEntrada || d.DataSaida >= model.DataEntrada);
+                .Where(d => d.DataSaida > model.DataEntrada && d.DataEntrada < model.DataSaida)
+                .FirstOrDefaultAsync();
 
-            if (verificaData)
+            if (verificaData != null)
                 throw new Exception($"Quarto {model.QuartoId} estará reservado nesta data.");
 
             var quarto = await _context
@@ -117,6 +118,9 @@ namespace Hotel.Repositorio.Services
 
             if (reserva.DataEntrada > DateTime.Now)
                 throw new Exception("Check-In não pode ser feito antes da data de entrada.");
+
+            if (reserva.DataEntrada.Date < DateTime.Now.Date)
+                throw new Exception($"A reserva foi cancelada, a data de entrada {reserva.DataEntrada} foi excedida.");
 
             if (reserva.CheckIn != null)
                 throw new Exception("Check-In já cadastrado.");
