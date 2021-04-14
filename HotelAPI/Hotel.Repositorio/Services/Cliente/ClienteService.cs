@@ -27,6 +27,7 @@ namespace Hotel.Repositorio.Services
                 {
                     Cpf = c.Cpf,
                     NomeCompleto = c.NomeCompleto,
+                    DataNascimento = c.DataNascimento,
                     Email = c.Email,
                     Telefone = c.Telefone
                 }).ToListAsync();
@@ -78,6 +79,25 @@ namespace Hotel.Repositorio.Services
             };
 
             _context.Cliente.Add(cliente);
+
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task Editar(string cpf, [FromBody] EditarModel model)
+        {
+            var cliente = await _context
+                .Cliente
+                .Where(c => c.Cpf == cpf)
+                .FirstOrDefaultAsync();
+
+            if (cliente == null)
+                throw new Exception("Cpf não cadastrado.");
+
+            cliente.Cpf = model.Cpf;
+            cliente.NomeCompleto = model.NomeCompleto;
+            cliente.DataNascimento = model.DataNascimento;
+            cliente.Email = model.Email;
+            cliente.Telefone = model.Telefone;
 
             await _context.SaveChangesAsync();
         }

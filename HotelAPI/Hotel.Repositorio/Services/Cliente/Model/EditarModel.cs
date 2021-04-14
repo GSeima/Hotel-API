@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Hotel.Repositorio.Services.Cliente.Model
 {
-    public class BuscarModel
+    public class EditarModel
     {
         public string Cpf { get; set; }
         public string NomeCompleto { get; set; }

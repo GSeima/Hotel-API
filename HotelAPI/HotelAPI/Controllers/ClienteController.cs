@@ -38,5 +38,11 @@ namespace HotelAPI.Controllers
         {
             await _cliente.Cadastrar(cadastro);
         }
+
+        [HttpPut("{cpf}/editar")]
+        public async Task Editar(string cpf, [FromBody] EditarModel editar)
+        {
+            await _cliente.Editar(cpf, editar);
+        }
     }
 }
