@@ -120,7 +120,7 @@ namespace Hotel.Repositorio.Services
                 throw new Exception("Check-In não pode ser feito antes da data de entrada.");
 
             if (reserva.DataEntrada.Date < DateTime.Now.Date)
-                throw new Exception($"A reserva foi cancelada, a data de entrada {reserva.DataEntrada} foi excedida.");
+                throw new Exception($"A reserva foi cancelada, a data de entrada {reserva.DataEntrada:dd/MM/yyyy} foi excedida.");
 
             if (reserva.CheckIn != null)
                 throw new Exception("Check-In já cadastrado.");

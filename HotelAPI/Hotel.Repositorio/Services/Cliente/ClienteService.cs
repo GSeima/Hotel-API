@@ -83,8 +83,10 @@ namespace Hotel.Repositorio.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task Editar(string cpf, [FromBody] EditarModel model)
+        public async Task Editar(string cpf, [FromBody] CadastrarModel model)
         {
+            model.ValidarCadastro();
+
             var cliente = await _context
                 .Cliente
                 .Where(c => c.Cpf == cpf)
