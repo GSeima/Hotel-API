@@ -45,9 +45,9 @@ namespace HotelAPI.Controllers
         }
 
         [HttpPost("{reservaId}/checkOut")]
-        public async Task<ObterModel> CheckOut(int reservaId, [FromBody] CheckOutModel checkOut)
+        public async Task CheckOut(int reservaId, [FromBody] CheckOutModel checkOut)
         {
-            return await _reserva.CheckOut(reservaId, checkOut);
+            await _reserva.CheckOut(reservaId, checkOut);
         }
     }
 }

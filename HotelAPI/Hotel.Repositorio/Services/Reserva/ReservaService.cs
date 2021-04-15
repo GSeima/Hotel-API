@@ -146,7 +146,7 @@ namespace Hotel.Repositorio.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task<ObterModel> CheckOut(int reservaId, CheckOutModel model)
+        public async Task CheckOut(int reservaId, CheckOutModel model)
         {
             var reserva = await _context
                 .Reserva
@@ -190,8 +190,6 @@ namespace Hotel.Repositorio.Services
             reserva.Quarto.SituacaoId = Situacao.Disponivel;
 
             await _context.SaveChangesAsync();
-
-            return await Obter(reservaId);
         }
     }
 }
