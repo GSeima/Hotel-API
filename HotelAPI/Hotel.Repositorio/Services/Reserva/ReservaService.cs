@@ -80,7 +80,7 @@ namespace Hotel.Repositorio.Services
                 .Reserva
                 .Where(q => q.QuartoId == model.QuartoId)
                 .Where(r => r.CheckOut == null)
-                .Where(d => d.DataSaida > model.DataEntrada && d.DataEntrada < model.DataSaida)
+                .Where(d => d.DataSaida >= model.DataEntrada && d.DataEntrada < model.DataSaida)
                 .FirstOrDefaultAsync();
 
             if (verificaData != null)
