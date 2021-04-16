@@ -57,6 +57,11 @@ namespace Hotel.Dominio.Entities
         public decimal? ValorTotal { get; set; }
         public DateTime? CheckOut { get; set; }
 
+        // FK
+        public Status StatusId { get; set; }
+        [ForeignKey(nameof(StatusId))]
+        public StatusReserva StatusReserva { get; set; }
+
         public Reserva()
         {
             this.Hospedes = Hospedes;

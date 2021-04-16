@@ -34,7 +34,8 @@ namespace Hotel.Repositorio.Services
                     Capacidade = r.Quarto.TipoQuarto.Capacidade,
                     Cpf = r.Cpf,
                     CheckIn = r.CheckIn,
-                    CheckOut = r.CheckOut
+                    CheckOut = r.CheckOut,
+                    StatusDescricao = r.StatusReserva.Descricao
                     
                 }).ToListAsync();
 
@@ -59,7 +60,8 @@ namespace Hotel.Repositorio.Services
                     DataSaida = r.DataSaida,
                     CheckIn = r.CheckIn.Value,
                     CheckOut = r.CheckOut.Value,
-                    ValorTotal = r.ValorTotal.Value
+                    ValorTotal = r.ValorTotal.Value,
+                    StatusDescricao = r.StatusReserva.Descricao
                 }).FirstOrDefaultAsync();
 
             return reserva;
@@ -79,8 +81,9 @@ namespace Hotel.Repositorio.Services
             var verificaData = await _context
                 .Reserva
                 .Where(q => q.QuartoId == model.QuartoId)
-                .Where(r => r.CheckOut == null)
+                .Where(r => r.StatusId == Status.EmAndamento)
                 .Where(d => d.DataSaida >= model.DataEntrada && d.DataEntrada < model.DataSaida)
+                .Include(s => s.StatusReserva)
                 .FirstOrDefaultAsync();
 
             if (verificaData != null)
@@ -98,10 +101,37 @@ namespace Hotel.Repositorio.Services
                 DataEntrada = model.DataEntrada,
                 DataSaida = model.DataSaida,
                 Hospedes = new List<HospedeCpf>(),
-                DataCriacaoReserva = DateTime.Now
+                DataCriacaoReserva = DateTime.Now,
+                StatusId = Status.EmAndamento
             };
 
             _context.Reserva.Add(reserva);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task Cancelar(int reservaId)
+        {
+            var reserva = await _context
+                .Reserva
+                .Where(r => r.ReservaId == reservaId)
+                .FirstOrDefaultAsync();
+
+            if (reserva == null)
+                throw new Exception("Reserva não cadastrada.");
+
+            if (reserva.StatusId == Status.Finalizada)
+                throw new Exception("Reserva finalizada não pode ser cancelada.");
+
+            if (reserva.StatusId == Status.Cancelada)
+            {
+                throw new Exception("Reserva já foi cancelada.");
+            }
+
+            if (reserva.CheckIn != null)
+                throw new Exception("Não pode cancelar uma reserva que já foi feito Check-In.");
+
+            reserva.StatusId = Status.Cancelada;
+
             await _context.SaveChangesAsync();
         }
 
@@ -115,6 +145,11 @@ namespace Hotel.Repositorio.Services
 
             if (reserva == null)
                 throw new Exception("Reserva não cadastrada.");
+
+            if (reserva.StatusId == Status.Cancelada)
+            {
+                throw new Exception("Reserva foi cancelada.");
+            }
 
             if (reserva.DataEntrada > DateTime.Now)
                 throw new Exception("Check-In não pode ser feito antes da data de entrada.");
@@ -186,6 +221,8 @@ namespace Hotel.Repositorio.Services
             {
                 reserva.ValorTotal = ((int)Math.Ceiling(tempoHospedagem.TotalDays) * reserva.ValorDiarias) + reserva.TaxasConsumo + reserva.Multa;
             }
+
+            reserva.StatusId = Status.Finalizada;
 
             reserva.Quarto.SituacaoId = Situacao.Disponivel;
 

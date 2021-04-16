@@ -38,6 +38,12 @@ namespace HotelAPI.Controllers
             await _reserva.Cadastrar(adicionar);
         }
 
+        [HttpPost("{reservaId}/cancelar")]
+        public async Task Cancelar(int reservaId)
+        {
+            await _reserva.Cancelar(reservaId);
+        }
+
         [HttpPost("{reservaId}/checkIn")]
         public async Task CheckIn(int reservaId, [FromBody] List<HospedeCpf> hospedes)
         {

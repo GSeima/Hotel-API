@@ -18,5 +18,6 @@ namespace Hotel.Repositorio.Services.Reserva.Model
         public DateTime? CheckIn { get; set; }
         public DateTime? CheckOut { get; set; }
         public decimal? ValorTotal { get; set; }
+        public string StatusDescricao { get; set; }
     }
 }
